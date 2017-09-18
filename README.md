@@ -14,7 +14,6 @@ In order to be able to run the example the following packages need to be locally
 
 ```r
 #Using the CRAN repo
-install.packages("checkpoint")
 install.packages("testthat")
 ```
 
