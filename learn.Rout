@@ -1,0 +1,42 @@
+
+R version 3.4.1 (2017-06-30) -- "Single Candle"
+Copyright (C) 2017 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin16.7.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> #Setting up the environment
+> #Required libraries for reproducibility
+> library(checkpoint)
+
+checkpoint: Part of the Reproducible R Toolkit from Microsoft
+https://mran.microsoft.com/documents/rro/reproducibility/
+> checkpoint("2017-09-15")
+Scanning for packages used in this project
+- Discovered 2 packages
+All detected packages already installed
+checkpoint process complete
+---
+There were 19 warnings (use warnings() to see them)
+> 
+> #Required libraries for unit testing
+> library(testthat)
+> auto_test(code_path = "./code/", test_path = "./tests/", reporter = "summary")
+Input Argument Validity: ......
+Roman Numeral Conversion: ..........
+
+DONE ===========================================================================
+
+Execution halted
