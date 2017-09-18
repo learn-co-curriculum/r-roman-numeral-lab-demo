@@ -4,14 +4,12 @@ In this lab you will be writing an R Function `convert_to_roman` that will conve
 
 ## Structure
 
-
 - `tests/test_input_argument_validity.R`, the current tests used for validity of input argument.  
 - `tests/test_roman_numeral_conversiona.R`, the current tests used for converstions.  
 - `code/roman_numeral.R`, where to implement your function.
 
 In order to be able to run the example the following packages need to be locally installed
 
-- the `checkpoint` package used for reproducibility,
 - the `testthat` package used for unit testing.
 
 ```r
